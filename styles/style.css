@@ -1,0 +1,363 @@
+/*  BASICS AND COMMON OF THIS WEBPAGE */
+*{
+  /* background-color: #a8a1a1;   */
+}
+body{
+    width: 1920px;
+    background-color: rgb(255, 255, 255);
+    margin: 0px auto;
+    margin-top: 0px;
+    font-family: sans-serif;
+}
+.btn-primary{
+    color: white ;
+    background-color: #FF900E;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 30px;
+    border: none;
+    transition: transform 0.2s ease  ;
+}
+    .btn-primary:hover{
+        background-color: #df3f00;
+        transform: scale(1.10);
+}
+
+h2{
+    font-size: 64px;
+    font-weight: bold;   
+}
+h3{
+    font-size: 45px;
+    font-weight: bold;
+    margin: -5px auto;
+}
+h4{
+    font-size: 30px;
+    margin: -5px auto;
+}
+p{
+    font-size: 25px;
+    color: #727272;    
+}
+p:hover{
+    font-size: 25px;
+    color: #3d3c3c;    
+}
+
+
+
+
+/*----------------------------
+                HEADER STYLE STARTS -----------------------------
+-------------------------------*/
+
+/* Navbar */
+nav{
+    width: 1440px;
+    margin: 0px auto;
+}
+.nav-container{
+    display: flex;    
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    
+}
+.nav-title{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    list-style-type: none;
+    padding: 5px 40px;
+    font-size: 27px;    
+}
+nav a{
+    text-decoration: none;
+    color: #050505;
+}
+.nav-title a:hover{
+    color: #FF900E;
+}
+nav li:hover{
+    color: white;
+    font-weight: bold;
+    background-color: #FF900E;
+    border-radius: 5px;   
+}
+
+/* -----------------
+        Banner
+------------------ */
+.banner{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    width: 1440px; 
+}
+
+.banner-container{
+    width: 860px;
+    margin: 20px auto;
+    align-items: center;
+    text-align: center;
+}
+.banner-title{
+    margin-bottom: 10px;
+}
+.banner .btn-primary{
+    margin: 10px;
+}
+.banner img{
+    margin: 30px auto;
+    align-items: center;
+    display: flex;
+    transition: transform 0.2s ease
+}
+.banner img:hover{
+    transform: scale(1.05); 
+}
+/* ---------------------------------------------------------------------------
+---------------------------------MAIN SECTION---------------------------------
+------------------------------------------------------------------------------ */
+
+/* -------------------
+        Team Section
+--------------------- */
+.team{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px auto;
+    width: 1440px;
+}
+.team-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2 ,1fr);
+    gap: 30px;
+    width: 730PX; 
+    transition: transform 0.2s ease; 
+}
+.team-images:hover{
+    transform: scale(1.05);
+
+}
+.main-title{
+    width: 540px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+}
+.team-texts{
+    width: 540px;
+    padding: 40px;  
+    transition: transform 0.2s ease; 
+}
+.team-texts:hover{
+    transform: scale(1.10);
+}
+.gray-text{
+    color: gray;
+}
+.yellow-text{
+    color: #FF900E;
+}
+/*----------------------- 
+                    Futures
+-------------------------
+  */
+.future-section{
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    background-color: white;
+    margin: auto;
+}
+.future-texts-container{
+    width: 500px;
+    position: relative;
+    
+}
+.future{
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;   
+}
+
+.box{
+    box-shadow: 0 2px 100px rgba(128, 128, 128, 0.226);
+}
+    .box:hover{
+    box-shadow: 0 2px 100px rgba(128, 128, 128, 0.815);
+}
+.future-section img{
+    height: 1360px; 
+    transition: transform 0.2s ease    
+}
+
+.years-exp{
+    position: absolute;
+    left: 600px;
+    bottom: 0px;
+    width: 340px;
+    height: 200px;
+    color: white;
+    background-color: #FF900E;
+    text-align: center;
+    padding: 30px;
+    display: block;
+    align-items: center;
+    border-radius: 10px;    
+}
+.years-exp h3{
+    padding-top: 50px;
+}
+.years-exp p{
+    font-size: 35px;
+    margin-top: -10px;
+    color: black;
+}
+
+/* -------
+    Some Facts
+    -------- */
+
+.some-facts{
+    width: 1440px;
+    margin:50px auto;
+    padding: 40px;    
+}
+.facts{
+    width: 500px;
+    padding: 40px;   
+}
+
+/* -----------
+project history
+------------- */
+.project-history{
+
+    display: flex;
+    justify-content: space-around;
+    width: 1440px;
+    margin: auto;
+}
+.project-overview{
+    width: 240px;
+    height: 240px;
+    border: 3px solid rgb(189, 82, 11);
+    border-radius: 5px;
+    text-align: center;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: transform 0.2s ease-in-out  ;
+}
+    .project-overview:hover{       
+        transform: scale(1.15);
+        border: 5px solid #FF900E;
+        border-radius: 10px;
+        background-color: #ff8f0e38;
+    }
+.project-overview img{
+    width: 90px;
+    padding: 35px 0px 5px 0px;   
+}
+.project-overview h3{
+    margin-bottom:  -25px;
+    padding-bottom: -50px;
+}
+.project-overview p{
+    padding: -5px;
+    font-size: 25px;
+}
+/*  -------------------------------FOOTER Styles ------------------
+---------------------------------------------------------------- */
+
+/* -------------------
+        Our Sponsors
+        ------------------- */
+.Our-sponsor-title{
+    text-align: center;
+    width: 540px;
+    margin:40px auto;
+    padding: 40px 0px;   
+}
+.Our-sponsor-title h2{
+    margin-bottom: -10px;
+}
+.sponsor-logos{
+    display: flex;
+    width: 1440px;
+    justify-content: space-around;
+    margin: 70px auto;
+}
+
+.sponsor-logo{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: transform 0.2s ease-out;
+} 
+   .sponsor-logo:hover{
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+        transform: scale(1.20);
+}
+
+.copywrite{
+    width: 1440px;
+    height: 100px;
+    background-color: #ff8f0e10;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 200px auto;
+}
+.copywrite p{
+    margin: auto;
+}
+    .copywrite p:hover{
+        color: #111111;
+}
+
+.hide{
+    display: none;
+}
+/*  media part ----------------------------------------------- */
+@media screen and (max-width:576px) {
+    .nav-container, ul {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;        
+        
+    }
+    .team{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .team-images, .future-section, .some-facts, .sponsor-logos, .copywrite{
+        display: flex;
+        width: 500px;
+       flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+    .sponsor-logo{
+        margin-bottom: 30px;
+    }
+    .years-exp{
+        display: none;
+    }
+    *{
+        max-width: 576px;
+    }
+}
